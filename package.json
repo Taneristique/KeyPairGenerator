@@ -1,0 +1,23 @@
+{
+  "name": "keypairgenerator",
+  "version": "1.0.0",
+  "description": "It creates key pairs for the ethereum blockchain to use for only test purposes.These generated keys are for demonstration purposes only. NEVER store or use these keys on a real Ethereum network.Leaking your private key can lead to a loss of funds!",
+  "main": "index.js",
+  "scripts": {
+    "default": "node index.js 10",
+    "help": "node index.js -h",
+    "alternative": "node transformerApproach.js 10"
+  },
+  "keywords": [
+    "'ethereum'",
+    "'secp256k1'",
+    "'keyGenerator'"
+  ],
+  "author": "Taneristique",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.11.1",
+    "mocha": "^10.3.0",
+    "yargs": "^17.7.2"
+  }
+}
