@@ -70,11 +70,6 @@ function keyPairGenerator(privateKey) {
  * @throws {Error} If the provided number is outside the valid range or is not an integer.
  */
 function createSeveralKeys(num) {
-  // Validate input (must be a positive integer between 1 and 10)
-  if (num <= 0 || num > 10 || !Number.isInteger(num)) {
-    throw new Error('Invalid number of key pairs. Please provide an integer between 1 and 10.');
-  }
-
   for (let i = 0; i < num; i++) {
     const privateKey = privateKeyGenerator();
     const keyPair = keyPairGenerator(privateKey);
